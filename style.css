@@ -1,0 +1,21 @@
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#4F46E5;
+  --accent-2:#06B6D4;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#021026);color:#cbd5e1;line-height:1.4}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.glassmorphism{background:rgba(30,41,59,0.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(51,65,85,0.3)}
+.gradient-text{background:linear-gradient(to right,#38bdf8,#34d399);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.nav-link-active{color:#38bdf8!important}
+.skill-item img{filter:brightness(1.1);}
+button:disabled{opacity:0.6;cursor:not-allowed}
+@media (max-width:600px){ .container{padding:12px} }
+
+
+

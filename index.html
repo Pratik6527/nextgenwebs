@@ -185,6 +185,19 @@
     />
   </div>
   
+  <div>
+  <label for="resume" class="block text-sm font-medium text-slate-300">Upload Resume (PDF or docx only)</label>
+  <input
+    type="file"
+    id="resume"
+    name="resume"
+    accept=".pdf, .doex"
+    required
+    class="mt-1 block w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-sky-500 file:text-white hover:file:bg-sky-600"
+  />
+</div>
+
+  
 
   <div>
     <label for="message" class="block text-sm font-medium text-slate-300">Message</label>
@@ -228,59 +241,7 @@
     </footer>
 
     <script src="script.js"></script>
-    <script type="module">
-  // Import Firebase modules
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
-  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
 
-
-  // Your Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBLJYTMWWttvj5-V4az206x4fpR4nFVByo",
-    authDomain: "web-contact-60e10.firebaseapp.com",
-    projectId: "web-contact-60e10",
-    storageBucket: "web-contact-60e10.firebasestorage.app",
-    messagingSenderId: "800325439609",
-    appId: "1:800325439609:web:4cb3d554123b0b88ef04a8",
-    measurementId: "G-KW40GXVH5P"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  // Handle contact form submission
-  const contactForm = document.getElementById('contact-form');
-  const formStatus = document.getElementById('form-status');
-
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    formStatus.innerHTML = '<p class="text-yellow-300">⏳ Sending message...</p>';
-
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    try {
-      await addDoc(collection(db, 'messages'), {
-        name,
-        phone,
-        email,
-        message,
-        timestamp: new Date()
-      });
-
-      formStatus.innerHTML = '<p class="text-green-400">✅ Message sent successfully!</p>';
-      contactForm.reset();
-    } catch (error) {
-      console.error('Error saving message:', error);
-      formStatus.innerHTML = '<p class="text-red-400">❌ Failed to send message. Try again later.</p>';
-    }
-
-    setTimeout(() => (formStatus.innerHTML = ''), 5000);
-  });
-</script>
 
 </body>
 </html>

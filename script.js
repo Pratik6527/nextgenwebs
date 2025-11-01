@@ -1,67 +1,50 @@
-document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Mobile menu ---
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if(mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
-    }
 
-    // --- Smooth scroll ---
-    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if(href && href.length > 1){ 
-            e.preventDefault(); 
-            const el = document.querySelector(href); 
-            if(el) el.scrollIntoView({ behavior: 'smooth' }); 
-            if(mobileMenu) mobileMenu.classList.add('hidden'); // Close mobile menu on click
-        }
-    }));
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+  import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-database.js";
 
-    // --- Contact Form Submission ---
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
+  const firebaseConfig = {
+    apiKey: "AIzaSyBLJYTMWWttvj5-V4az206x4fpR4nFVByo",
+    authDomain: "web-contact-60e10.firebaseapp.com",
+    databaseURL: "https://web-contact-60e10-default-rtdb.firebaseio.com",
+    projectId: "web-contact-60e10",
+    storageBucket: "web-contact-60e10.appspot.com",
+    messagingSenderId: "800325439609",
+    appId: "1:800325439609:web:4cb3d554123b0b88ef04a8"
+  };
 
-    if (contactForm) {
-      contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault(); // Stop the default form submission
-        const btn = contactForm.querySelector('button[type="submit"]');
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
 
-        // Get data from the form
-        const data = {
-          name: document.getElementById('name').value,
-          email: document.getElementById('email').value,
-          message: document.getElementById('message').value
-        };
+  const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
 
-        try {
-          // Send data to YOUR server's /api/contact endpoint
-          const res = await fetch('/api/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-          });
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formStatus.innerHTML = '<p class="text-yellow-300">⏳ Sending message...</p>';
 
-          const resData = await res.json();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-          if (res.ok) {
-            formStatus.innerHTML = `<p class="text-green-400">✅ Message sent successfully!</p>`;
-            contactForm.reset();
-          } else {
-            formStatus.innerHTML = `<p class="text-yellow-300">⚠️ Submission failed: ${resData.error}</p>`;
-          }
-        } catch (err) {
-          formStatus.innerHTML = `<p class="text-red-400">❌ Network error. Please try again later.</p>`;
-        }
-
-        btn.disabled = false;
-        btn.textContent = 'Send Message';
-        setTimeout(() => (formStatus.innerHTML = ''), 5000);
+    try {
+      const messagesRef = ref(db, 'messages');
+      await set(push(messagesRef), {
+        name,
+        phone,
+        email,
+        message,
+        timestamp: new Date().toISOString()
       });
+
+      formStatus.innerHTML = '<p class="text-green-400">✅ Message sent successfully!</p>';
+      contactForm.reset();
+    } catch (error) {
+      console.error('Error:', error);
+      formStatus.innerHTML = '<p class="text-red-400">❌ Network error. Please try again later.</p>';
     }
 
-    // Note: Your admin.html expects /api/projects, which does not exist
-    // in your server.js. That will be the next step.
-});
+    setTimeout(() => (formStatus.innerHTML = ''), 5000);
+  });
+

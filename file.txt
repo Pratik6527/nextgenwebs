@@ -1,0 +1,6 @@
+   <form
+  action="https://formspree.io/f/xnnogrzp"
+  action="mongodb+srv://dbAtharva@nextgenwebs.g8xthp9.mongodb.net/"
+  method="POST"
+  class="space-y-6"
+>

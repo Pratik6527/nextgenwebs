@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pratik Mondal — Full Stack / Agency</title>
+  <title>Pratik Mondal — Full Stack Developer & AI Solutions</title>
+  <meta name="description"
+    content="Portfolio of Pratik Mondal, a Full Stack Developer specializing in AI-driven web applications, modern SaaS platforms, and premium digital experiences." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="style.css" rel="stylesheet" />
 </head>
+
 <body class="bg-gradient-to-b from-slate-950 via-slate-900 to-black text-slate-100">
   <!-- Navbar (shared) -->
   <header class="fixed w-full z-40 glassmorphism">
-  <div class="container mx-auto flex items-center justify-between p-4">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="Logo.png" alt="logo" class="h-10 w-10 rounded-md" />
-      <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
-    </a>
-    <nav class="hidden md:flex gap-6">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About</a> <a href="services.html" class="nav-link">Services</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-      <a href="ai.html" class="nav-link">AI Tools</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-    <a href="contact.html" class="hidden md:inline-block btn-primary">Hire Me</a>
-    <button id="mobile-toggle" class="md:hidden text-slate-300">☰</button>
-  </div>
-</header>
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="logo" class="h-10 w-10 rounded-md" />
+        <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a> <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="ai.html" class="nav-link">AI Tools</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-block btn-primary">Hire Me</a>
+      <button id="mobile-toggle" class="md:hidden text-slate-300">☰</button>
+    </div>
+  </header>
 
   <!-- Hero -->
   <main class="pt-28">
-    <section class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <section class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center reveal">
       <div>
-        <h1 class="text-4xl md:text-6xl font-extrabold gradient-text">I build modern, scalable web apps & brand sites</h1>
-        <p class="mt-6 text-slate-300 max-w-2xl">
+        <div
+          class="inline-block px-3 py-1 mb-4 text-xs font-mono font-bold tracking-widest text-cyan-400 border border-cyan-500/30 rounded-full bg-cyan-900/10 animate-pulse">
+          /// SYSTEM: ONLINE V2.0
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold gradient-text font-heading glitch-text cursor-default">I build
+          modern, scalable web apps &
+          brand sites</h1>
+        <p class="mt-6 text-slate-300 max-w-2xl text-lg">
           Full stack developer & website studio. I craft production-ready frontends, robust backends, and delightful UX.
         </p>
         <div class="mt-8 flex gap-4">
@@ -40,40 +50,328 @@
           <a href="projects.html" class="btn-ghost">See projects</a>
         </div>
       </div>
-      <div class="relative">
-        <!-- stylized card / quick services -->
-        <div class="p-8 rounded-2xl glassmorphism shadow-xl">
-          <h3 class="font-semibold text-sky-300">Featured Services</h3>
-          <ul class="mt-4 space-y-3 text-slate-300">
-            <li>Custom Web Apps (React / Node / PostgreSQL)</li>
-            <li>Brand Websites & Landing Pages</li>
-            <li>SEO & Performance Optimization</li>
-          </ul>
-          <div class="mt-6 grid grid-cols-2 gap-3">
-            <a href="services.html#web" class="service-card">Web Development</a>
-            <a href="services.html#ai" class="service-card">AI Integrations</a>
-            <a href="services.html#design" class="service-card">Design & Branding</a>
-            <a href="services.html#support" class="service-card">Maintenance</a>
+      <div class="relative reveal delay-200 perspective-1000">
+        <!-- Hero Image / Dashboard Mockup -->
+        <div class="relative group transform transition-transform duration-700 hover:rotate-1">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-sky-600 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200">
+          </div>
+          <div class="relative rounded-2xl overflow-hidden glassmorphism p-2 spotlight-card">
+            <img src="assets/dashboard.png" alt="Dashboard Mockup" loading="eager"
+              class="rounded-xl w-full h-auto shadow-2xl transform group-hover:scale-[1.01] transition-transform duration-500" />
+
+            <!-- Floating Badge -->
+            <div
+              class="absolute -bottom-6 -right-6 glassmorphism p-4 rounded-xl flex items-center gap-3 animate-bounce-slow">
+              <div class="h-3 w-3 bg-green-500 rounded-full animate-pulse"></div>
+              <span class="text-sm font-bold text-white">System Online</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Ticker -->
+    <section class="py-10 border-y border-slate-800/50 bg-black/20 reveal">
+      <div class="container mx-auto px-6">
+        <p class="text-center text-slate-500 mb-6 text-sm uppercase tracking-wider">Powering next-gen applications with
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+          <!-- Devicon Logos with Hover Effects -->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+            loading="lazy"
+            class="h-12 w-12 transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(6,182,212,0.5)]"
+            title="React" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"
+            loading="lazy"
+            class="h-12 w-12 invert transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]"
+            title="Next.js" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            alt="TypeScript" loading="lazy"
+            class="h-12 w-12 transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+            title="TypeScript" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+            loading="lazy"
+            class="h-12 w-12 transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(34,197,94,0.5)]"
+            title="Node.js" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            alt="Tailwind" loading="lazy"
+            class="h-12 w-12 transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(56,189,248,0.5)]"
+            title="Tailwind CSS" />
+
+          <!-- Custom AI Icon for OpenAI/Gemini -->
+          <div
+            class="h-12 w-12 rounded-full bg-white flex items-center justify-center transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+            title="OpenAI / Gemini">
+            <span class="text-black font-bold text-xs">AI</span>
+          </div>
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+            loading="lazy"
+            class="h-12 w-12 transition-transform hover:scale-110 drop-shadow-[0_0_10px_rgba(71,162,72,0.5)]"
+            title="MongoDB" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY / SOCIAL PROOF (Premium Addition) -->
+    <section class="py-10 bg-slate-950/50 border-b border-slate-800/30 overflow-hidden">
+      <div class="container mx-auto px-6 text-center mb-6">
+        <p class="text-xs text-slate-500 uppercase tracking-[0.2em]">Trusted by Innovative Brands</p>
+      </div>
+
+      <div class="marquee-container">
+        <div class="marquee-track gap-16 px-4">
+          <!-- Duplicate brands for seamless loop -->
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">INTERCOM</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">VERCEL</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">STRIPE</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">LINEAR</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">RAYCAST</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">FIGMA</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">OPENAI</span>
+          <!-- Duplicate Set -->
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">INTERCOM</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">VERCEL</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">STRIPE</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">LINEAR</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">RAYCAST</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">FIGMA</span>
+          <span
+            class="text-2xl font-bold font-heading text-white opacity-40 hover:opacity-100 transition-opacity">OPENAI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATS -->
+    <section class="container mx-auto px-6 py-20 reveal">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="stat-card">
+          <div class="stat-number">3+</div>
+          <div class="text-slate-400 mt-2">Years Exp.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">20+</div>
+          <div class="text-slate-400 mt-2">Projects Shipped</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="text-slate-400 mt-2">Client Success</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="text-slate-400 mt-2">AI Support</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow / Process -->
+    <section class="container mx-auto px-6 py-24 reveal">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold gradient-text font-heading">My Workflow</h2>
+        <p class="mt-4 text-slate-400">From chaos to clarity. I follow a structured process to ensure your project is
+          delivered on time and exceeds expectations.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Step 1 -->
+        <div class="glassmorphism p-8 rounded-2xl relative overflow-hidden group">
+          <div
+            class="absolute -right-4 -top-4 text-9xl font-bold text-slate-800/20 z-0 group-hover:text-sky-500/10 transition-colors">
+            1</div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold text-sky-400 mb-2">Discovery</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">We sit down to understand your business goals, target
+              audience, and technical requirements. No code is written until the vision is clear.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glassmorphism p-8 rounded-2xl relative overflow-hidden group delay-100">
+          <div
+            class="absolute -right-4 -top-4 text-9xl font-bold text-slate-800/20 z-0 group-hover:text-purple-500/10 transition-colors">
+            2</div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold text-purple-400 mb-2">Development</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">I build using modern, scalable tech stacks. Updates are
+              frequent, and code is clean, documented, and optimized for performance.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glassmorphism p-8 rounded-2xl relative overflow-hidden group delay-200">
+          <div
+            class="absolute -right-4 -top-4 text-9xl font-bold text-slate-800/20 z-0 group-hover:text-emerald-500/10 transition-colors">
+            3</div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold text-emerald-400 mb-2">Launch & Scale</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">Deployment is just the beginning. I ensure SEO readiness,
+              set up analytics, and provide support as your user base grows.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- small projects preview -->
-    <section class="container mx-auto px-6 pb-20">
-      <h2 class="text-2xl font-bold gradient-text">Selected Projects</h2>
+    <section class="container mx-auto px-6 pb-20 reveal">
+      <h2 class="text-2xl font-bold gradient-text font-heading">Selected Projects</h2>
       <div id="projects-preview" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       <div class="mt-6">
         <a href="projects.html" class="btn-ghost">View full portfolio</a>
       </div>
     </section>
+    <!-- Why Choose Me -->
+    <section class="container mx-auto px-6 py-20 border-t border-slate-800/50 reveal">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold gradient-text font-heading mb-6">Why partner with me?</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div
+                class="h-10 w-10 flex-shrink-0 bg-sky-900/30 rounded-lg flex items-center justify-center text-sky-400">⚡
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-200">Speed & Performance</h4>
+                <p class="text-slate-400 text-sm">I build for 100/100 Lighthouse scores. Fast sites convert better.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="h-10 w-10 flex-shrink-0 bg-purple-900/30 rounded-lg flex items-center justify-center text-purple-400">
+                🎨</div>
+              <div>
+                <h4 class="font-bold text-slate-200">Premium Aesthetics</h4>
+                <p class="text-slate-400 text-sm">Your brand deserves to look world-class. No generic templates.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="h-10 w-10 flex-shrink-0 bg-pink-900/30 rounded-lg flex items-center justify-center text-pink-400">
+                🤖</div>
+              <div>
+                <h4 class="font-bold text-slate-200">Future-Proof Tech</h4>
+                <p class="text-slate-400 text-sm">Leverage AI and modern frameworks to stay ahead of competitors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-sky-500 to-purple-500 rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity">
+          </div>
+          <div class="glassmorphism p-8 rounded-2xl relative text-center">
+            <p class="text-2xl font-bold text-white">"Pratik transformed our vague idea into a stunning,
+              high-performance web app in just 3 weeks."</p>
+            <div class="mt-6 flex items-center justify-center gap-3">
+              <div class="h-10 w-10 bg-slate-700 rounded-full"></div>
+              <div class="text-left">
+                <div class="font-bold text-sm text-white">Sarah Jenkins</div>
+                <div class="text-xs text-slate-400">CEO, TechStart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container mx-auto px-6 pb-24 reveal">
+      <div class="glassmorphism p-12 rounded-3xl text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-sky-500/10 to-purple-500/10 z-0"></div>
+        <div class="relative z-10">
+          <h2 class="text-3xl md:text-5xl font-bold text-white font-heading mb-6">Ready to start your project?</h2>
+          <p class="text-slate-300 max-w-xl mx-auto mb-8 text-lg">Let's build something extraordinary together. Schedule
+            a free consultation or get a quote in minutes.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+            <a href="projects.html" class="btn-ghost">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="border-t border-slate-800 py-8 mt-12 text-center text-slate-400">
-    <p>&copy; 2025 Pratik Mondal — Built with care • <a href="admin.html" class="text-sky-300">Admin</a></p>
+  <footer class="border-t border-slate-800 bg-slate-950/50 backdrop-blur-xl mt-24 pt-16 pb-8 reveal">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <img src="assets/logo-copy.png" alt="logo" class="h-10 w-10 rounded-md" loading="lazy" />
+          <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
+        </div>
+        <p class="text-slate-400 leading-relaxed max-w-sm">
+          Building digital products that combine beautiful design with powerful engineering. Let's create something
+          extraordinary.
+        </p>
+        <div class="mt-6 flex flex-col gap-2">
+          <a href="mailto:pratikmondal527@gmail.com"
+            class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm group">
+            <span
+              class="p-1.5 rounded-full bg-white/5 border border-white/10 group-hover:bg-sky-500/20 group-hover:border-sky-500/50 transition-colors">✉️</span>
+            pratikmondal527@gmail.com
+          </a>
+          <a href="tel:+917047448557"
+            class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm group">
+            <span
+              class="p-1.5 rounded-full bg-white/5 border border-white/10 group-hover:bg-emerald-500/20 group-hover:border-emerald-500/50 transition-colors">📞</span>
+            +91 70474 48557
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6">Sitemap</h4>
+        <ul class="space-y-3 text-slate-400 text-sm">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="projects.html" class="hover:text-primary transition-colors">Projects</a></li>
+          <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+          <li><a href="ai.html" class="hover:text-primary transition-colors">AI Tools</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6">Socials</h4>
+        <ul class="space-y-3 text-slate-400 text-sm">
+          <li><a href="https://www.linkedin.com/in/pratik-mondal-4bb952270/" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary transition-colors">LinkedIn</a></li>
+          <li><a href="https://github.com/Pratik6527" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary transition-colors">GitHub</a></li>
+          <li><a href="https://x.com/PratikMondal527" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary transition-colors">Twitter</a></li>
+          <li><a href="admin.html" class="text-sky-500 hover:text-sky-400 transition-colors">Admin Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto px-6 pt-8 border-t border-slate-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+      <p>&copy; 2025 Pratik Mondal. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>

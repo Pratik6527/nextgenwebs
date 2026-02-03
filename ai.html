@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>AI Tools — Pratik</title>
-  <script src="https://cdn.tailwindcss.com"></script><link href="style.css" rel="stylesheet" />
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Tools — Pratik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet" />
 </head>
+
 <body class="bg-slate-950 text-slate-100">
-   <header class="fixed w-full z-40 glassmorphism">
+  <header class="fixed w-full z-40 glassmorphism">
     <div class="container mx-auto flex items-center justify-between p-4">
       <a href="index.html" class="flex items-center gap-3">
-        <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" /> 
+        <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" />
         <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
       </a>
       <nav class="hidden md:flex gap-6">
@@ -23,38 +29,144 @@
   </header>
 
   <main class="pt-28 container mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold gradient-text">AI Tools</h1>
+    <div class="flex flex-col items-start gap-2 mb-8 reveal">
+      <div
+        class="inline-block px-3 py-1 mb-2 text-xs font-mono font-bold tracking-widest text-pink-400 border border-pink-500/30 rounded-full bg-pink-900/10 animate-pulse">
+        /// NEURAL LINK: ACTIVE
+      </div>
+      <div class="flex items-center gap-4">
+        <img src="assets/ai-icon.png" alt="AI Tools"
+          class="h-16 w-16 object-contain drop-shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
+        <h1 class="text-3xl md:text-5xl font-bold gradient-text font-heading glitch-text cursor-default">AI Tools</h1>
+      </div>
+    </div>
 
     <section class="mt-8 grid lg:grid-cols-2 gap-8">
-      <div class="glassmorphism p-6 rounded-xl">
-        <h3 class="text-xl font-semibold">AI Chat Assistant</h3>
-        <div id="chat" class="mt-4 flex flex-col gap-3">
-          <div id="chat-log" class="max-h-72 overflow-auto space-y-2 p-2 bg-slate-900 rounded"></div>
+      <div class="glassmorphism p-6 rounded-xl reveal delay-100">
+        <h3 class="text-xl font-semibold font-heading">AI Chat Assistant</h3>
+        <p class="text-xs text-sky-400 font-mono tracking-wider mb-2">/// ONLINE • READY TO ASSIST</p>
+        <div id="chat" class="mt-1 flex flex-col gap-3">
           <div class="mt-3 flex gap-2">
-            <input id="chat-input" class="flex-1 px-4 py-2 rounded bg-slate-900" placeholder="Ask about web projects, pricing, or tech..." />
+            <input id="chat-input"
+              class="flex-1 px-4 py-2 rounded bg-slate-900 border border-slate-700 text-slate-200 focus:border-sky-500 outline-none transition-colors"
+              placeholder="Ask about web projects, pricing, or tech..." />
             <button id="chat-send" class="btn-primary">Send</button>
           </div>
         </div>
       </div>
 
-      <div class="glassmorphism p-6 rounded-xl">
-  <h3 class="text-xl font-semibold">AI Quote Estimator</h3>
-  <p class="text-slate-300 mt-2">Describe the project briefly (pages, ecommerce, integrations) and get an instant estimate.</p>
-  
-  <textarea id="quote-input" rows="4" class="mt-3 w-full rounded p-3 bg-slate-900" placeholder="e.g., A 5-page business website with a blog and contact form..."></textarea>
-  
-  <div class="mt-3 flex gap-2">
-    <button id="quote-btn" class="btn-primary">Estimate Price</button>
-  </div>
-  <div id="quote-output" class="mt-4 text-slate-300"></div>
-</div>
-    </section>
-  </main>
-  <footer class="border-t border-slate-800 py-8 mt-12 text-center text-slate-400">
-    <p>&copy; 2025 Pratik Mondal — Built with care • <a href="admin.html" class="text-sky-300">Admin</a></p>
-  </footer>
+      <div class="glassmorphism p-6 rounded-xl reveal delay-200">
+        <h3 class="text-xl font-semibold font-heading">AI Quote Estimator</h3>
+        <p class="text-slate-300 mt-2">Describe the project briefly (pages, ecommerce, integrations) and get an instant
+          estimate.</p>
 
-  <script type="module" src="main.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+        <textarea id="quote-input" rows="4"
+          class="mt-3 w-full rounded p-3 bg-slate-900 border border-slate-700 text-slate-200 focus:border-sky-500 outline-none transition-colors"
+          placeholder="e.g., A 5-page business website with a blog and contact form..."></textarea>
+
+        <div class="mt-3 flex gap-2">
+          <button id="quote-btn" class="btn-primary">Estimate Price</button>
+        </div>
+        <div id="quote-output" class="mt-4 text-slate-300"></div>
+      </div>
+    </section>
+    </section>
+
+    <!-- NEURAL CAPABILITIES SECTION -->
+    <section class="mt-12 reveal delay-300">
+      <h2 class="text-2xl font-bold text-center mb-10 text-slate-300">Powered by Next-Gen Intelligence</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Cap 1 -->
+        <div class="glassmorphism p-6 rounded-xl border-t-2 border-cyan-500 relative overflow-hidden">
+          <div class="absolute inset-0 bg-cyan-500/5 z-0"></div>
+          <div class="relative z-10">
+            <div class="text-3xl mb-3">🧠</div>
+            <h3 class="text-lg font-bold text-white">Context Aware</h3>
+            <p class="text-sm text-slate-400 mt-2">The agent remembers conversation history and understands robust
+              technical context about your project needs.</p>
+          </div>
+        </div>
+        <!-- Cap 2 -->
+        <div class="glassmorphism p-6 rounded-xl border-t-2 border-purple-500 relative overflow-hidden">
+          <div class="absolute inset-0 bg-purple-500/5 z-0"></div>
+          <div class="relative z-10">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="text-lg font-bold text-white">Real-Time Estimations</h3>
+            <p class="text-sm text-slate-400 mt-2">Connects directly to our pricing pricing engine to generate accurate
+              cost projections in milliseconds.</p>
+          </div>
+        </div>
+        <!-- Cap 3 -->
+        <div class="glassmorphism p-6 rounded-xl border-t-2 border-emerald-500 relative overflow-hidden">
+          <div class="absolute inset-0 bg-emerald-500/5 z-0"></div>
+          <div class="relative z-10">
+            <div class="text-3xl mb-3">🛡️</div>
+            <h3 class="text-lg font-bold text-white">Secure Processing</h3>
+            <p class="text-sm text-slate-400 mt-2">All inputs are processed via secure, encrypted channels. Your project
+              ideas stay confidential.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="border-t border-slate-800 bg-slate-950/50 backdrop-blur-xl mt-24 pt-16 pb-8 reveal">
+      <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" />
+            <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
+          </div>
+          <div class="mt-6 flex flex-col gap-2">
+            <a href="mailto:pratikmondal527@gmail.com"
+              class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm group">
+              <span
+                class="p-1.5 rounded-full bg-white/5 border border-white/10 group-hover:bg-sky-500/20 group-hover:border-sky-500/50 transition-colors">✉️</span>
+              pratikmondal527@gmail.com
+            </a>
+            <a href="tel:+917047448557"
+              class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm group">
+              <span
+                class="p-1.5 rounded-full bg-white/5 border border-white/10 group-hover:bg-emerald-500/20 group-hover:border-emerald-500/50 transition-colors">📞</span>
+              +91 70474 48557
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">Sitemap</h4>
+          <ul class="space-y-3 text-slate-400 text-sm">
+            <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+            <li><a href="projects.html" class="hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+            <li><a href="ai.html" class="hover:text-primary transition-colors">AI Tools</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">Socials</h4>
+          <ul class="space-y-3 text-slate-400 text-sm">
+            <li><a href="https://www.linkedin.com/in/pratik-mondal-4bb952270/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-primary transition-colors">LinkedIn</a></li>
+            <li><a href="https://github.com/Pratik6527" target="_blank" rel="noopener noreferrer"
+                class="hover:text-primary transition-colors">GitHub</a></li>
+            <li><a href="https://x.com/PratikMondal527" target="_blank" rel="noopener noreferrer"
+                class="hover:text-primary transition-colors">Twitter</a></li>
+            <li><a href="admin.html" class="text-sky-500 hover:text-sky-400 transition-colors">Admin Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto px-6 pt-8 border-t border-slate-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+        <p>&copy; 2025 Pratik Mondal. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>

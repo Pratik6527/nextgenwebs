@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services — Pratik Mondal</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="style.css" rel="stylesheet" />
 </head>
+
 <body class="bg-slate-950 text-slate-100">
-   <header class="fixed w-full z-40 glassmorphism">
+  <header class="fixed w-full z-40 glassmorphism">
     <div class="container mx-auto flex items-center justify-between p-4">
       <a href="index.html" class="flex items-center gap-3">
-        <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" /> 
+        <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" />
         <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
       </a>
       <nav class="hidden md:flex gap-6">
@@ -25,39 +28,209 @@
     </div>
   </header>
 
-  <main class="pt-28 container mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold gradient-text">Services</h1>
+  <main class="pt-28 container mx-auto px-6 py-20">
+    <div
+      class="inline-block px-3 py-1 mb-4 text-xs font-mono font-bold tracking-widest text-emerald-400 border border-emerald-500/30 rounded-full bg-emerald-900/10 animate-pulse">
+      /// SERVICES: ACTIVE
+    </div>
+    <h1 class="text-3xl md:text-5xl font-bold gradient-text font-heading reveal glitch-text cursor-default">Premium
+      Services</h1>
 
-    <section id="web" class="mt-8 grid md:grid-cols-2 gap-8">
-      <div class="glassmorphism p-6 rounded-xl">
-        <h3 class="text-xl font-semibold">Custom Web Applications</h3>
-        <p class="mt-3 text-slate-300">React / Next.js frontends, Node / Express or Nest.js backends, PostgreSQL or MongoDB, dockerized deployments.</p>
+    <section id="web" class="mt-12 grid md:grid-cols-2 gap-8 reveal delay-100">
+      <!-- Service 1 -->
+      <div
+        class="glassmorphism p-8 rounded-xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300 border border-white/5 hover:border-sky-500/30">
+        <div class="absolute -right-4 -top-4 text-9xl opacity-5 group-hover:opacity-10 transition-opacity">💻</div>
+        <div class="flex items-center gap-4 mb-6">
+          <div
+            class="h-14 w-14 rounded-lg bg-sky-500/20 flex items-center justify-center text-3xl shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+            💻
+          </div>
+          <h3 class="text-2xl font-bold font-heading text-white">Custom Web Apps</h3>
+        </div>
+        <p class="text-slate-300 leading-relaxed text-lg">
+          High-performance frontends using <span class="text-sky-400">React</span> & <span
+            class="text-white">Next.js</span>.
+          Robust backends with <span class="text-green-400">Node</span> & <span class="text-yellow-400">Python</span>.
+          We build scalable, dockerized systems ready for growth.
+        </p>
       </div>
-      <div class="glassmorphism p-6 rounded-xl">
-        <h3 class="text-xl font-semibold">Ecommerce & Integrations</h3>
-        <p class="mt-3 text-slate-300">Payment gateways, subscriptions, headless CMS and analytics.</p>
+
+      <!-- Service 2 -->
+      <div
+        class="glassmorphism p-8 rounded-xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300 border border-white/5 hover:border-purple-500/30">
+        <div class="absolute -right-4 -top-4 text-9xl opacity-5 group-hover:opacity-10 transition-opacity">🛒</div>
+        <div class="flex items-center gap-4 mb-6">
+          <div
+            class="h-14 w-14 rounded-lg bg-purple-500/20 flex items-center justify-center text-3xl shadow-[0_0_15px_rgba(168,85,247,0.3)]">
+            🛒
+          </div>
+          <h3 class="text-2xl font-bold font-heading text-white">E-Commerce & SaaS</h3>
+        </div>
+        <p class="text-slate-300 leading-relaxed text-lg">
+          Seamless payment integrations with <span class="text-indigo-400">Stripe</span>.
+          Subscription management, headless CMS, and real-time analytics dashboards.
+        </p>
       </div>
     </section>
 
-    <section id="ai" class="mt-8 grid md:grid-cols-2 gap-8">
-      <div class="glassmorphism p-6 rounded-xl">
-        <h3 class="text-xl font-semibold">AI Integrations</h3>
-        <p class="mt-3 text-slate-300">Chatbots, automated content, quote estimators. Connect to OpenAI/Gemini via secure backend.</p>
+    <section id="ai" class="mt-8 grid md:grid-cols-2 gap-8 reveal delay-200">
+      <!-- Service 3 -->
+      <div
+        class="glassmorphism p-8 rounded-xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300 border border-white/5 hover:border-pink-500/30">
+        <div class="absolute -right-4 -top-4 text-9xl opacity-5 group-hover:opacity-10 transition-opacity">🤖</div>
+        <div class="flex items-center gap-4 mb-6">
+          <div
+            class="h-14 w-14 rounded-lg bg-pink-500/20 flex items-center justify-center text-3xl shadow-[0_0_15px_rgba(236,72,153,0.3)]">
+            🤖
+          </div>
+          <h3 class="text-2xl font-bold font-heading text-white">AI Solutions</h3>
+        </div>
+        <p class="text-slate-300 leading-relaxed text-lg">
+          Intelligent Chatbots, automated content generation, and predictive models using <span
+            class="text-pink-400">OpenAI</span> & <span class="text-blue-400">Gemini</span> APIs.
+        </p>
       </div>
-      <div class="glassmorphism p-6 rounded-xl">
-        <h3 class="text-xl font-semibold">Maintenance & Training</h3>
-        <p class="mt-3 text-slate-300">Ongoing support, monitoring, and team handover documentation.</p>
+
+      <!-- Service 4 -->
+      <div
+        class="glassmorphism p-8 rounded-xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300 border border-white/5 hover:border-emerald-500/30">
+        <div class="absolute -right-4 -top-4 text-9xl opacity-5 group-hover:opacity-10 transition-opacity">🛠️</div>
+        <div class="flex items-center gap-4 mb-6">
+          <div
+            class="h-14 w-14 rounded-lg bg-emerald-500/20 flex items-center justify-center text-3xl shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+            🛠️
+          </div>
+          <h3 class="text-2xl font-bold font-heading text-white">Maintenance & Scale</h3>
+        </div>
+        <p class="text-slate-300 leading-relaxed text-lg">
+          24/7 monitoring, performance optimization, and seamless handover with detailed documentation.
+        </p>
       </div>
     </section>
-    <div class="mt-8">
+
+    <!-- PROCESS SECTION -->
+    <section class="mt-24 reveal">
+      <h2 class="text-3xl font-bold gradient-text font-heading text-center mb-12">How We Deliver Excellence</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div
+          class="glassmorphism p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300 group">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🔍</div>
+          <h3 class="font-bold text-white mb-2">Discovery</h3>
+          <p class="text-sm text-slate-400">Deep dive into requirements & goals.</p>
+        </div>
+        <div
+          class="glassmorphism p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300 group">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🎨</div>
+          <h3 class="font-bold text-white mb-2">Design</h3>
+          <p class="text-sm text-slate-400">Wireframes, UI, and UX rapid prototyping.</p>
+        </div>
+        <div
+          class="glassmorphism p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300 group">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">💻</div>
+          <h3 class="font-bold text-white mb-2">Build</h3>
+          <p class="text-sm text-slate-400">Agile development with regular updates.</p>
+        </div>
+        <div
+          class="glassmorphism p-6 rounded-xl text-center hover:-translate-y-2 transition-transform duration-300 group">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🚀</div>
+          <h3 class="font-bold text-white mb-2">Launch</h3>
+          <p class="text-sm text-slate-400">Deployment, testing, and handover.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION & PARTNERS -->
+    <section class="mt-20 reveal delay-200">
+      <div class="glassmorphism p-8 rounded-xl text-center">
+        <h2 class="text-3xl font-bold gradient-text font-heading mb-6">Why Visionaries Choose Us</h2>
+        <div class="grid md:grid-cols-3 gap-8 mt-8">
+          <div class="space-y-3">
+            <div class="text-sky-400 text-4xl font-bold">10x</div>
+            <h4 class="text-xl font-bold text-white">Faster Development</h4>
+            <p class="text-slate-400 text-sm">Automated pipelines & AI-assisted coding ensure we ship features weeks
+              ahead of schedule.</p>
+          </div>
+          <div class="space-y-3">
+            <div class="text-purple-400 text-4xl font-bold">99.9%</div>
+            <h4 class="text-xl font-bold text-white">Uptime Guarantee</h4>
+            <p class="text-slate-400 text-sm">Enterprise-grade infrastructure on Vercel & AWS Edge networks.</p>
+          </div>
+          <div class="space-y-3">
+            <div class="text-emerald-400 text-4xl font-bold">24/7</div>
+            <h4 class="text-xl font-bold text-white">AI Monitoring</h4>
+            <p class="text-slate-400 text-sm">Our AI agents constantly monitor your app for performance bottlenecks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mt-8 reveal delay-300">
       <a href="contact.html" class="btn-primary">Get a custom quote</a>
     </div>
   </main>
-  <footer class="border-t border-slate-800 py-8 mt-12 text-center text-slate-400">
-    <p>&copy; 2025 Pratik Mondal — Built with care • <a href="admin.html" class="text-sky-300">Admin</a></p>
+  <footer class="border-t border-slate-800 bg-slate-950/50 backdrop-blur-xl mt-24 pt-16 pb-8 reveal">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" />
+          <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
+        </div>
+        <p class="text-slate-400 leading-relaxed max-w-sm">
+          Building digital products that combine beautiful design with powerful engineering. Let's create something
+          extraordinary.
+        </p>
+        <div class="mt-6 flex flex-col gap-2">
+          <a href="mailto:pratikmondal527@gmail.com"
+            class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm group">
+            <span
+              class="p-1.5 rounded-full bg-white/5 border border-white/10 group-hover:bg-sky-500/20 group-hover:border-sky-500/50 transition-colors">✉️</span>
+            pratikmondal527@gmail.com
+          </a>
+          <a href="tel:+917047448557"
+            class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm group">
+            <span
+              class="p-1.5 rounded-full bg-white/5 border border-white/10 group-hover:bg-emerald-500/20 group-hover:border-emerald-500/50 transition-colors">📞</span>
+            +91 70474 48557
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6">Sitemap</h4>
+        <ul class="space-y-3 text-slate-400 text-sm">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="projects.html" class="hover:text-primary transition-colors">Projects</a></li>
+          <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+          <li><a href="ai.html" class="hover:text-primary transition-colors">AI Tools</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-6">Socials</h4>
+        <ul class="space-y-3 text-slate-400 text-sm">
+          <li><a href="https://www.linkedin.com/in/pratik-mondal-4bb952270/" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary transition-colors">LinkedIn</a></li>
+          <li><a href="https://github.com/Pratik6527" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary transition-colors">GitHub</a></li>
+          <li><a href="https://x.com/PratikMondal527" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary transition-colors">Twitter</a></li>
+          <li><a href="admin.html" class="text-sky-500 hover:text-sky-400 transition-colors">Admin Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto px-6 pt-8 border-t border-slate-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+      <p>&copy; 2025 Pratik Mondal. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>

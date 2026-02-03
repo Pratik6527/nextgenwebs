@@ -692,3 +692,29 @@ function animateCounters() {
   stats.forEach(stat => observer.observe(stat));
 }
 document.addEventListener('DOMContentLoaded', animateCounters);
+
+// --------- 12. MOBILE MENU LOGIC ---------
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileBtn = document.getElementById("mobile-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Close menu when clicking any link inside it
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  }
+});

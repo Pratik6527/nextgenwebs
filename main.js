@@ -694,12 +694,17 @@ function animateCounters() {
 document.addEventListener('DOMContentLoaded', animateCounters);
 
 // --------- 12. MOBILE MENU LOGIC ---------
-document.addEventListener('DOMContentLoaded', () => {
+function initMobileMenu() {
   const mobileBtn = document.getElementById("mobile-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
 
   if (mobileBtn && mobileMenu) {
-    mobileBtn.addEventListener("click", () => {
+    // Remove old listeners to be safe (though not strictly necessary on page load)
+    const newBtn = mobileBtn.cloneNode(true);
+    mobileBtn.parentNode.replaceChild(newBtn, mobileBtn);
+
+    newBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent document click from immediately closing it
       mobileMenu.classList.toggle("hidden");
     });
 
@@ -712,9 +717,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close when clicking outside
     document.addEventListener("click", (e) => {
-      if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+      if (!mobileMenu.contains(e.target) && !newBtn.contains(e.target)) {
         mobileMenu.classList.add("hidden");
       }
     });
   }
-});
+}
+
+// Run immediately if ready, or wait
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+  initMobileMenu();
+}

@@ -3,6 +3,8 @@
 
 A high-performance, AI-integrated portfolio website built with modern web technologies.
 
+> **Status**: ✅ Vercel Ready (Zero-Config)
+
 ## ✨ Features
 - **Dynamic AI Agent**: Chat with a virtual consultant powered by OpenAI.
 - **Glassmorphism UI**: Premium design with tailwindcss and custom CSS.

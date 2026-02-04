@@ -11,7 +11,7 @@
 2.  Create a repository on GitHub.
 3.  Push your code:
     ```bash
-    git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+    git remote add origin https://github.com/Pratik6527/nextgenwebs
     git push -u origin main
     ```
 

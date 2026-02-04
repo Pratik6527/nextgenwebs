@@ -73,178 +73,98 @@
       </p>
     </div>
 
-    <!-- Main Content Grid -->
-    <div class="grid lg:grid-cols-12 gap-12 items-start">
-
-      <!-- Left Column: Info & Context -->
-      <div class="lg:col-span-5 space-y-8 reveal delay-100">
-
-        <!-- Contact Card -->
-        <div class="glassmorphism p-8 rounded-2xl relative overflow-hidden group">
-          <div
-            class="absolute -right-10 -top-10 h-32 w-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-500/20 transition-all">
-          </div>
-
-          <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-            <span class="text-3xl">📬</span> Connect Direct
-          </h3>
-
-          <div class="space-y-6">
-            <a href="mailto:pratikmondal527@gmail.com" class="flex items-center gap-4 group/item">
-              <div
-                class="h-12 w-12 rounded-xl bg-slate-800/50 flex items-center justify-center text-xl border border-slate-700 group-hover/item:border-sky-500/50 group-hover/item:bg-sky-500/10 transition-all">
-                ✉️
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 uppercase tracking-wider font-bold">Email</div>
-                <div class="text-slate-200 font-medium group-hover/item:text-white transition-colors">
-                  pratikmondal527@gmail.com</div>
-              </div>
-            </a>
-
-            <a href="tel:+917047448557" class="flex items-center gap-4 group/item">
-              <div
-                class="h-12 w-12 rounded-xl bg-slate-800/50 flex items-center justify-center text-xl border border-slate-700 group-hover/item:border-emerald-500/50 group-hover/item:bg-emerald-500/10 transition-all">
-                📞
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 uppercase tracking-wider font-bold">Phone</div>
-                <div class="text-slate-200 font-medium group-hover/item:text-white transition-colors">+91 70474 48557
-                </div>
-              </div>
-            </a>
-
-            <div class="flex items-center gap-4">
-              <div
-                class="h-12 w-12 rounded-xl bg-slate-800/50 flex items-center justify-center text-xl border border-slate-700">
-                📍
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 uppercase tracking-wider font-bold">Location</div>
-                <div class="text-slate-200 font-medium">Kolkata, India (Remote Available)</div>
-              </div>
-            </div>
-          </div>
+    <!-- Main Content: Centered Single Column (Like Previous) -->
+    <div class="max-w-2xl mx-auto reveal delay-100">
+      <div class="glassmorphism p-8 md:p-10 rounded-3xl relative border border-white/10 shadow-2xl">
+        <!-- Background Glow -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-sky-500/5 via-purple-500/5 to-pink-500/5 pointer-events-none rounded-3xl">
         </div>
 
-        <!-- Why Me Card -->
-        <div class="glassmorphism p-8 rounded-2xl border-l-4 border-purple-500">
-          <h3 class="text-xl font-bold text-white mb-4">Why Partner With Me?</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-3">
-              <span class="text-green-400 mt-1">✓</span>
-              <span class="text-slate-300 text-sm">Full-Stack Expertise (React, Python, AWS)</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green-400 mt-1">✓</span>
-              <span class="text-slate-300 text-sm">AI Integration Specialist (LLMs, RAG)</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green-400 mt-1">✓</span>
-              <span class="text-slate-300 text-sm">Production-Grade Code Quality</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green-400 mt-1">✓</span>
-              <span class="text-slate-300 text-sm">100% Transparent Communication</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <h2 class="text-2xl font-bold text-white mb-2 text-center">Project Inquiry</h2>
+        <p class="text-slate-400 text-sm mb-8 text-center">Fill out the form below. I typically respond within 12 hours.
+        </p>
 
-      <!-- Right Column: Form -->
-      <div class="lg:col-span-7 reveal delay-200">
-        <div class="glassmorphism p-8 md:p-10 rounded-3xl relative border border-white/10 shadow-2xl">
-          <!-- Background Glow -->
-          <div
-            class="absolute inset-0 bg-gradient-to-br from-sky-500/5 via-purple-500/5 to-pink-500/5 pointer-events-none rounded-3xl">
+        <form id="contact-form" class="space-y-6 relative z-10">
+
+          <div class="premium-input-group">
+            <input id="name" type="text"
+              class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent"
+              placeholder="Name" required />
+            <label for="name"
+              class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Your
+              Name</label>
           </div>
 
-          <h2 class="text-2xl font-bold text-white mb-2">Project Inquiry</h2>
-          <p class="text-slate-400 text-sm mb-8">Fill out the form below. I typically respond within 12 hours.</p>
+          <div class="premium-input-group">
+            <input id="email" type="email"
+              class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent"
+              placeholder="Email" required />
+            <label for="email"
+              class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Email
+              Address</label>
+          </div>
 
-          <form id="contact-form" class="space-y-6 relative z-10">
+          <div class="premium-input-group">
+            <input id="phone" type="tel"
+              class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent"
+              placeholder="Phone" />
+            <label for="phone"
+              class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Phone
+              Number (Optional)</label>
+          </div>
 
-            <div class="grid md:grid-cols-2 gap-6">
-              <div class="premium-input-group">
-                <input id="name" type="text"
-                  class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent"
-                  placeholder="Name" required />
-                <label for="name"
-                  class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Your
-                  Name</label>
-              </div>
-
-              <div class="premium-input-group">
-                <input id="email" type="email"
-                  class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent"
-                  placeholder="Email" required />
-                <label for="email"
-                  class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Email
-                  Address</label>
-              </div>
-            </div>
-
-            <div class="premium-input-group">
-              <input id="phone" type="tel"
-                class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent"
-                placeholder="Phone" />
-              <label for="phone"
-                class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Phone
-                Number (Optional)</label>
-            </div>
-
-            <!-- Booking Toggle -->
-            <div class="bg-slate-800/30 p-4 rounded-xl border border-white/5 hover:border-sky-500/30 transition-colors">
-              <label class="flex items-center gap-3 cursor-pointer">
-                <div class="relative flex items-center">
-                  <input type="checkbox" id="book-slot-check" class="peer sr-only">
-                  <div
-                    class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500">
-                  </div>
-                </div>
-                <span class="text-slate-300 font-medium text-sm">I want to schedule a 30-min discovery call</span>
-              </label>
-
-              <!-- Hidden Slot Selector -->
-              <div id="slot-selector-container"
-                class="hidden mt-4 pt-4 border-t border-slate-700/50 grid grid-cols-2 gap-4 animate-fade-in">
-                <div>
-                  <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Select Day</label>
-                  <select id="slot-day"
-                    class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:border-sky-500 outline-none cursor-pointer">
-                    <option value="" disabled selected>-- Day --</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Select Time</label>
-                  <select id="slot-time"
-                    class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:border-sky-500 outline-none cursor-pointer disabled:opacity-50"
-                    disabled>
-                    <option value="" disabled selected>-- Time --</option>
-                  </select>
+          <!-- Booking Toggle -->
+          <div class="bg-slate-800/30 p-4 rounded-xl border border-white/5 hover:border-sky-500/30 transition-colors">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <div class="relative flex items-center">
+                <input type="checkbox" id="book-slot-check" class="peer sr-only">
+                <div
+                  class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500">
                 </div>
               </div>
+              <span class="text-slate-300 font-medium text-sm">I want to schedule a 30-min discovery call</span>
+            </label>
+
+            <!-- Hidden Slot Selector -->
+            <div id="slot-selector-container"
+              class="hidden mt-4 pt-4 border-t border-slate-700/50 grid grid-cols-2 gap-4 animate-fade-in">
+              <div>
+                <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Select Day</label>
+                <select id="slot-day"
+                  class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:border-sky-500 outline-none cursor-pointer">
+                  <option value="" disabled selected>-- Day --</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Select Time</label>
+                <select id="slot-time"
+                  class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:border-sky-500 outline-none cursor-pointer disabled:opacity-50"
+                  disabled>
+                  <option value="" disabled selected>-- Time --</option>
+                </select>
+              </div>
             </div>
+          </div>
 
-            <div class="premium-input-group relative">
-              <textarea id="message" rows="5"
-                class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent resize-none"
-                placeholder="Message" required></textarea>
-              <label for="message"
-                class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Project
-                Details & Budget</label>
-            </div>
+          <div class="premium-input-group relative">
+            <textarea id="message" rows="5"
+              class="premium-input w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all outline-none placeholder-transparent resize-none"
+              placeholder="Message" required></textarea>
+            <label for="message"
+              class="absolute left-4 top-3 text-slate-500 text-sm transition-all pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-3 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-sky-400 peer-focus:bg-slate-950 peer-focus:px-1">Project
+              Details & Budget</label>
+          </div>
 
-            <button type="submit"
-              class="btn-primary w-full py-4 text-base tracking-wide shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 relative overflow-hidden group">
-              <span class="relative z-10 flex items-center justify-center gap-2">
-                Launch Collaboration 🚀
-              </span>
-            </button>
+          <button type="submit"
+            class="btn-primary w-full py-4 text-base tracking-wide shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 relative overflow-hidden group">
+            <span class="relative z-10 flex items-center justify-center gap-2">
+              Launch Collaboration 🚀
+            </span>
+          </button>
 
-            <div id="form-status" class="text-center text-sm font-medium mt-2 min-h-[20px]"></div>
-          </form>
-        </div>
+          <div id="form-status" class="text-center text-sm font-medium mt-2 min-h-[20px]"></div>
+        </form>
       </div>
     </div>
   </main>

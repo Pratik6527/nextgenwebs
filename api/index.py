@@ -181,12 +181,12 @@ from email.mime.multipart import MIMEMultipart
 
 @app.post("/api/contact")
 async def contact_endpoint(contact: ContactRequest):
-    if not messages_collection:
+    if messages_collection is None:
         print("Database collection not available")
         return {"success": True, "message": "Message received (Cached locally - DB Offline)"}
     
     try:
-        doc = contact.dict()
+        doc = contact.model_dump()
         doc["createdAt"] = datetime.datetime.utcnow()
         
         # 1. Generate Meeting Link if slot is requested
@@ -232,6 +232,8 @@ async def contact_endpoint(contact: ContactRequest):
         print(f"Message persisted. ID: {result.inserted_id}")
         return {"success": True, "message": "Message successfully beamed to Pratik!"}
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         print(f"Insert Failed: {e}")
         raise HTTPException(status_code=500, detail="Transmission failed")
 

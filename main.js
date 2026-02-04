@@ -1,7 +1,7 @@
 /* main.js */
 
 // --------- 1. DEFINE YOUR BACKEND URL ---------
-const MY_BACKEND_API_ROOT = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+const MY_BACKEND_API_ROOT = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.protocol === "file:"
   ? "http://localhost:8000"
   : ""; // On Vercel, use relative paths
 

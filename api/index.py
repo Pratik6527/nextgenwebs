@@ -8,7 +8,10 @@ from pymongo import MongoClient
 import datetime
 
 # 1. Load Enviroment
-load_dotenv() # Defaults to .env in current directory 
+# 1. Load Enviroment
+from pathlib import Path
+env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=env_path) 
 
 app = FastAPI()
 
